@@ -105,6 +105,7 @@ Piece::~Piece() {}
 Pawn::Pawn(PieceColor color, int x, int y) : Piece(color, PAWN, x, y) {}
 bool Pawn::isValidMove(int X, int Y, Piece* grid[8][8])
 {
+
     if (X < 0 || X >= 8 || Y < 0 || Y >= 8)
         return false;
 
@@ -113,6 +114,7 @@ bool Pawn::isValidMove(int X, int Y, Piece* grid[8][8])
 
     int diffX = X - getX();
     int diffY = abs(Y - getY());
+
 
     // One step forward into empty square
     if (diffX == direction && diffY == 0 && grid[X][Y] == nullptr)
