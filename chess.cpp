@@ -146,6 +146,7 @@ bool Bishop::isValidMove(int X, int Y, Piece* grid[8][8])
     if (grid[X][Y] != nullptr && grid[X][Y]->getColor() == getColor())
         return false;
 
+
     int diffX = abs(X - getX());
     int diffY = abs(Y - getY());
 
