@@ -1,0 +1,7 @@
+==========================
+Player 1 : WHITE
+Player 2 : BLACK
+Moves    : 0
+WINNER   : WHITE (White)
+==========================
+
