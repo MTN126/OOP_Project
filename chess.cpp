@@ -5,6 +5,7 @@ void saveResult(string player1, string player2, string winner, int moves)
 {
     ofstream file("chess_results.txt", ios::app);
 
+
     if (!file.is_open())
     {
         cout << "Error: Could not open file to save result!\n";
