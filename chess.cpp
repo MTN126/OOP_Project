@@ -176,6 +176,7 @@ bool Rook::isValidMove(int X, int Y, Piece* grid[8][8])
     if (X < 0 || X >= 8 || Y < 0 || Y >= 8)
         return false;
 
+
     if (grid[X][Y] != nullptr && grid[X][Y]->getColor() == getColor())
         return false;
 
